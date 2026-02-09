@@ -5,39 +5,53 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SKV Fire Safety Manufacturing</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
 body{background:#f5f7fa;color:#222}
+
 header{background:#0b1c2d;color:white;padding:20px}
 nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
 .logo img{height:50px}
 nav ul{display:flex;list-style:none;gap:20px}
-nav a{color:rgb(234, 225, 225);text-decoration:none;font-weight:bold}
-.hero{position:relative;color:white;padding:100px 20px;text-align:center}
-.hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:1}
-.hero img{width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;z-index:0}
-.hero-content{position:relative;z-index:2}
+nav a{color:white;text-decoration:none;font-weight:bold}
+
+.hero{position:relative;color:white;padding:120px 20px;text-align:center}
+.hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.55)}
+.hero img{position:absolute;width:100%;height:100%;object-fit:cover;top:0;left:0}
+.hero-content{position:relative}
 .hero h1{font-size:40px;margin-bottom:15px}
-.btn{background:#e63946;color:white;padding:12px 22px;border:none;border-radius:6px;text-decoration:none;display:inline-block;margin-top:10px}
+
+.btn{background:#e63946;color:white;padding:12px 22px;border:none;border-radius:6px;text-decoration:none;display:inline-block;margin:5px}
+
 .section{padding:60px 20px;max-width:1200px;margin:auto}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+
 .card{background:white;border-radius:10px;padding:20px;box-shadow:0 5px 15px rgba(0,0,0,.08)}
 .card img{width:100%;height:200px;object-fit:cover;border-radius:8px}
+
 .price{font-size:20px;color:#e63946;font-weight:bold;margin:10px 0}
-.card button{width:100%;padding:12px;background:#0b1c2d;color:white;border:none;border-radius:6px;cursor:pointer}
+.card button{width:100%;padding:12px;background:#0b1c2d;color:white;border:none;border-radius:6px}
+
 .features{background:#0b1c2d;color:white}
+
 .contact-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+
 input,textarea{width:100%;padding:12px;margin-top:10px;border-radius:6px;border:1px solid #ccc}
+
 footer{background:#111;color:white;padding:30px;text-align:center;margin-top:40px}
+
 .badge{background:green;color:white;padding:4px 8px;border-radius:5px;font-size:12px}
+
 .cart{position:fixed;right:20px;bottom:20px;background:#e63946;color:white;padding:15px;border-radius:50%;cursor:pointer}
 </style>
 </head>
+
 <body>
 
 <header>
 <nav>
-<div class="logo"><img src="c:\Users\pc\Downloads\logo.png " alt="SKV Fire Safety Logo"></div>
+<div class="logo"><img src="logo.png"></div>
 <ul>
 <li><a href="#products">Products</a></li>
 <li><a href="#features">Features</a></li>
@@ -48,7 +62,7 @@ footer{background:#111;color:white;padding:30px;text-align:center;margin-top:40p
 </header>
 
 <section class="hero">
-<img src="c:\Users\pc\Downloads\Shivani Kori Vaidh fire safety store.png" alt="Store Background">
+<img src="store.png">
 <div class="hero-content">
 <h1>Professional Fire Alarm & Safety Solutions</h1>
 <p>Manufacturing • Supply • Installation • Service</p>
@@ -65,53 +79,72 @@ footer{background:#111;color:white;padding:30px;text-align:center;margin-top:40p
 <section id="features" class="section features">
 <h2>Why Choose SKV Fire Safety</h2>
 <div class="grid">
-<div class="card"><i class="fa fa-certificate fa-2x"></i><h3>Certified Equipment</h3><p>Standard approved fire safety products.</p></div>
-<div class="card"><i class="fa fa-industry fa-2x"></i><h3>Manufacturing Unit</h3><p>Direct manufacturer & supplier.</p></div>
-<div class="card"><i class="fa fa-tools fa-2x"></i><h3>Installation Support</h3><p>On-site installation available.</p></div>
-<div class="card"><i class="fa fa-headset fa-2x"></i><h3>Quick Support</h3><p>Fast response technical team.</p></div>
+
+<div class="card"><i class="fa fa-certificate fa-2x"></i>
+<h3>Certified Equipment</h3>
+<p>Standard approved fire safety products.</p></div>
+
+<div class="card"><i class="fa fa-industry fa-2x"></i>
+<h3>Manufacturing Unit</h3>
+<p>Direct manufacturer & supplier.</p></div>
+
+<div class="card"><i class="fa fa-tools fa-2x"></i>
+<h3>Installation Support</h3>
+<p>On-site installation available.</p></div>
+
+<div class="card"><i class="fa fa-headset fa-2x"></i>
+<h3>Quick Support</h3>
+<p>Fast response technical team.</p></div>
+
 </div>
 </section>
 
 <section id="about" class="section">
-<h2>About Our Company</h2>
-<p>SKV Fire Safety Manufacturing is a professional fire alarm and safety equipment manufacturer and supplier. We provide fire alarm panels, smoke detectors, hooters, MCP, and complete building fire protection systems with installation and maintenance support.</p>
+<h2>About Company</h2>
+<p>SKV Fire Safety Manufacturing is a professional fire alarm and safety equipment manufacturer and supplier providing complete fire protection systems.</p>
 </section>
 
 <section id="contact" class="section">
 <h2>Contact Us</h2>
+
 <div class="contact-box">
+
 <div>
 <h3>Send Inquiry</h3>
 <form onsubmit="sendMsg(event)">
-<input placeholder="Your Name" required>
+<input placeholder="Name" required>
 <input placeholder="Phone" required>
 <input placeholder="Email">
-<textarea placeholder="Your Requirement"></textarea>
+<textarea placeholder="Requirement"></textarea>
 <button class="btn">Send Message</button>
 </form>
 </div>
+
 <div>
 <h3>Direct Contact</h3>
-<p>📞 Phone: 9958414606</p>
-<p>📧 Email: firesistamgoura@gmail.com</p>
-<p>📍 Address: Makan No 263/A, Bajrang Colony, N.K.J Katni, M.P</p>
-<a class="btn" href="https://wa.me/919958414606">WhatsApp Chat</a>
+<p>📞 9958414606</p>
+<p>📧 firesistamgoura@gmail.com</p>
+<p>📍 Katni, M.P</p>
+<a class="btn" href="https://wa.me/919958414606">WhatsApp</a>
 </div>
+
 </div>
 </section>
 
 <footer>
-© 2026 SKV Fire Safety Manufacturing — All Rights Reserved
+© 2026 SKV Fire Safety Manufacturing
 </footer>
 
-<div class="cart" onclick="viewCart()"><i class="fa fa-shopping-cart"></i></div>
+<div class="cart" onclick="viewCart()">
+<i class="fa fa-shopping-cart"></i>
+</div>
 
 <script>
 const products = [
-{ id:1,name:"2 Zone Fire Alarm Panel",price:1800,img:"c:\Users\pc\Downloads\zone conventional fire alarm panel.jpeg"},
-{ id:2,name:"Smoke Detector",price:650,img:"https://images.unsplash.com/photo-1581093458791-9d15482442f9?auto=format&fit=crop&w=800&q=60"},
-{ id:3,name:"Fire Alarm Hooter",price:450,img:"https://images.unsplash.com/photo-1581091870627-3b1b6a9f4d44?auto=format&fit=crop&w=800&q=60"},
-{ id:4,name:"Manual Call Point",price:550,img:"https://images.unsplash.com/photo-1581091012184-7f2a2d3e1f3d?auto=format&fit=crop&w=800&q=60"}
+{id:1,name:"2 Zone Fire Alarm Panel",price:1800,img:"panel.jpg"},
+{id:2,name:"Smoke Detector",price:650,img:"smoke.jpg"},
+{id:3,name:"Fire Alarm Hooter",price:450,img:"hooter.jpg"},
+{id:4,name:"Manual Call Point",price:550,img:"mcp.jpg"}
 ];
 
 let cart=[];
@@ -119,33 +152,33 @@ let cart=[];
 function loadProducts(){
 const grid=document.getElementById('productGrid');
 products.forEach(p=>{
-const div=document.createElement('div');
-div.className='card';
-div.innerHTML=`
+const d=document.createElement('div');
+d.className='card';
+d.innerHTML=`
 <img src="${p.img}">
 <h3>${p.name}</h3>
 <div class="price">₹${p.price}</div>
 <span class="badge">In Stock</span>
 <button onclick="addToCart(${p.id})">Add to Cart</button>`;
-grid.appendChild(div);
+grid.appendChild(d);
 });
 }
 
 function addToCart(id){
 cart.push(products.find(p=>p.id===id));
-alert('Added to cart');
+alert("Added to cart");
 }
 
 function viewCart(){
-if(cart.length===0){alert('Cart empty');return}
-let msg='Order Inquiry:%0A';
-cart.forEach(p=>msg+=p.name+' - ₹'+p.price+'%0A');
-window.open('https://wa.me/919958414606?text='+msg);
+if(cart.length==0){alert("Cart empty");return}
+let msg="Order:%0A";
+cart.forEach(p=>msg+=p.name+" ₹"+p.price+"%0A");
+window.open("https://wa.me/919958414606?text="+msg);
 }
 
 function sendMsg(e){
 e.preventDefault();
-alert('Message sent — we will contact you soon');
+alert("Message sent");
 }
 
 loadProducts();
